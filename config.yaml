@@ -12,19 +12,12 @@ languages:
         weight: 1
         params:
             description: Jinhchoi dev blog
-    zh-cn:
-        languageName: 中文
-        title: 演示站点
+    ko:
+        languageName: 한국어
+        title: 최진호
         weight: 2
         params:
-            description: 演示说明
-    ar:
-        languageName: عربي
-        languagedirection: rtl
-        title: موقع تجريبي
-        weight: 3
-        params:
-            description: وصف تجريبي
+            description: 최진호의 개발자 블로그
 
 # Change it to your Disqus shortname before using
 disqusShortname: hugo-theme-stack
