@@ -2,40 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://dandyday.github.io/ko/categories/</loc>
+    <loc>https://dandyday.netlify.app/ko/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://dandyday.github.io/categories/"
+                href="https://dandyday.netlify.app/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://dandyday.github.io/ko/categories/"
+                href="https://dandyday.netlify.app/ko/categories/"
                 />
   </url><url>
-    <loc>https://dandyday.github.io/ko/tags/</loc>
+    <loc>https://dandyday.netlify.app/ko/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://dandyday.github.io/tags/"
+                href="https://dandyday.netlify.app/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://dandyday.github.io/ko/tags/"
+                href="https://dandyday.netlify.app/ko/tags/"
                 />
   </url><url>
-    <loc>https://dandyday.github.io/ko/</loc>
+    <loc>https://dandyday.netlify.app/ko/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://dandyday.github.io/"
+                href="https://dandyday.netlify.app/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://dandyday.github.io/ko/"
+                href="https://dandyday.netlify.app/ko/"
                 />
   </url>
 </urlset>

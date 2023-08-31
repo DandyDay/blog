@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Categories on 최진호</title>
-        <link>https://dandyday.github.io/ko/categories/</link>
+        <link>https://dandyday.netlify.app/ko/categories/</link>
         <description>Recent content in Categories on 최진호</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ko</language>
-        <copyright>Jinho Choi</copyright><atom:link href="https://dandyday.github.io/ko/categories/index.xml" rel="self" type="application/rss+xml" />
+        <copyright>Jinho Choi</copyright><atom:link href="https://dandyday.netlify.app/ko/categories/index.xml" rel="self" type="application/rss+xml" />
     </channel>
 </rss>
