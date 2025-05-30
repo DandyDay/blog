@@ -5,5 +5,5 @@
 	path = themes/ananke
 	url = https://github.com/theNewDynamic/gohugo-theme-ananke.git
 [submodule "jinho"]
-	path = jinho
+	path = themes/jinho
 	url = git@github.com:DandyDay/hugo-theme.git

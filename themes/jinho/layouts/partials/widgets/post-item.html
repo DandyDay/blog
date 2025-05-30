@@ -1,0 +1,46 @@
+{{ $permalink := .Permalink }}
+
+<div class="row border-bottom pb-3 pt-3">
+    {{ if isset .Params "image" }}
+    <div class="col-8">
+    {{ else }}
+    <div class="col-12">
+    {{ end }}
+        <div class="mt-2">
+            <div class="post-category">
+                {{ range .Params.categories }}
+                <a class="me-2 list-category" href="/categories/{{ . | urlize }}">{{ . }}</a>
+                {{ end }}
+            </div>
+            <h4 class="post-title mt-3">
+                <a class="post-title" href="{{ .Permalink }}">{{ .Title }}</a>
+            </h4>
+            <div class="post-summary">
+                {{ if isset .Params "description"}}
+                {{ .Description }}
+                {{ else }}
+                {{ .Summary | plainify | chomp }}
+                {{ end }}
+            </div>
+            <div class="d-flex mt-3">
+                {{ range .Params.tags }}
+                <a class="me-2 list-tag border px-2" href="/tags/{{ . | urlize }}">#{{ . }}</a>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+    {{ if isset .Params "image" }}
+    <div class="col-4">
+    {{ $title := .Title}}
+    {{ with .Params.image }}
+        <img src="
+        {{ if hasPrefix . "/" }}
+        {{ . }}
+        {{ else }}
+        {{ printf "%s%s" $permalink . }}
+        {{ end }}
+        " class="rounded img-fluid img-responsive object-fit-cover float-end" style="width: 170px; height: 170px" alt="{{ $title }}">
+    {{ end }}
+    </div>
+    {{ end }}
+</div>

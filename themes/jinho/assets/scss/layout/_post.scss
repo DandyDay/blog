@@ -1,0 +1,198 @@
+// post
+
+.post-info {
+  color: var(--bs-secondary-color);
+}
+
+.post-thumbnail {
+  border-radius: 0.9375rem;
+}
+
+@media (min-width: 36em) {
+  .post-thumbnail {
+    border-radius: 1.875rem;
+  }
+}
+
+.content blockquote {
+  margin: 30px 0px 20px 0px;
+  padding: 15px 10px 15px 20px;
+  border-left: 4px solid #adb5bd;
+  font-size: 15px;
+  font-weight: 400;
+  overflow-x: auto;
+  color: #6c757d;
+}
+
+.content blockquote p {
+  margin-bottom: 0;
+}
+
+.content .prompt-tip {
+  background-color: rgba(123, 247, 144, 0.2);
+}
+
+.content .prompt-info {
+  background-color: #e1f5fe;
+}
+
+.content .prompt-warning {
+  background-color: rgb(255, 243, 205);
+}
+
+.content .prompt-alert {
+  background-color: rgba(248, 215, 218, 0.56);
+
+}
+
+.content blockquote[class^=prompt-] {
+  border-left: 0;
+  position: relative;
+  padding: 1rem 1rem 1rem 3rem;
+  color: rgba(46, 46, 46, 0.77);
+  border-radius: .625rem;
+}
+
+.content blockquote[class^=prompt-]::before {
+  text-align: center;
+  width: 3rem;
+  position: absolute;
+  left: .25rem;
+  margin-top: .4rem;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.content blockquote.prompt-tip::before {
+  content: "";
+  color: #03b303;
+  font: normal 400 1em/1 "Font Awesome 6 Free";
+}
+
+.content blockquote.prompt-info::before {
+  content: "";
+  color: #0070cb;
+  font: normal 900 1em/1 "Font Awesome 6 Free";
+}
+
+.content blockquote.prompt-warning::before {
+  content: "";
+  color: #ef9c03;
+  font: normal 900 1em/1 "Font Awesome 6 Free";
+}
+
+.content blockquote.prompt-alert::before {
+  content: "";
+  color: #df3c30;
+  font: normal 900 1em/1 "Font Awesome 6 Free";
+}
+
+.content p {
+  font-size: 1.0625rem;
+  line-height: 1.75rem;
+  letter-spacing: 0.00625rem;
+}
+
+.content h2 {
+  font-size: 1.875rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.17rem;
+  line-height: 150%;
+}
+
+.content h3 {
+  font-size: 1.5625rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.875rem;
+  line-height: 150%;
+}
+
+.content h4 {
+  font-size: 1.325rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.875rem;
+  line-height: 150%;
+}
+
+.content ul {
+  line-height: 1.875rem;
+  padding-inline-start: 2.625rem;
+  font-size: 1.0625rem;
+  letter-spacing: 0.00625rem;
+  margin: 0px 0px 0.75rem;
+}
+
+.content figcaption {
+  text-align: center;
+  color: #868b94;
+}
+
+.content img {
+  width: 100%;
+  margin: 1.25rem 0px;
+}
+
+.post-tag {
+  border-radius: 4px;
+  color: var(--bs-primary);
+  text-decoration: none;
+  transition-duration: 0.2s
+}
+
+.post-tag:hover {
+  color: white;
+  background-color: var(--bs-primary);
+  transition-duration: 0.2s
+}
+
+// to center table
+table {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1.5rem;
+}
+
+//table design
+
+%table-cell {
+    padding: 0.4rem 1rem;
+    font-size: 95%;
+    white-space: nowrap;
+  }
+
+.content {
+    overflow-x: auto;
+    margin-bottom: 1.5rem;
+
+    > table {
+      min-width: 100%;
+      overflow-x: auto;
+      border-spacing: 0;
+
+      thead {
+        border-bottom: solid 2px rgba(210, 215, 217, 0.75);
+
+        th {
+          @extend %table-cell;
+        }
+      }
+
+      tbody {
+        tr {
+          border-bottom: 1px solid #eaeaea;
+
+          &:nth-child(2n) {
+            background-color: var(--tb-even-bg);
+          }
+
+          &:nth-child(2n + 1) {
+            background-color: #fbfcfd;
+          }
+
+          td {
+            @extend %table-cell;
+          }
+        }
+      } /* tbody */
+    } /* table */
+  }

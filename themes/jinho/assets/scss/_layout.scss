@@ -1,0 +1,28 @@
+@import "layout/code-theme";
+@import "layout/code";
+@import "layout/resume";
+@import "layout/post";
+@import "layout/postlist";
+@import "layout/base";
+
+// universal
+
+.max-756px {
+  max-width: 756px !important;
+}
+
+.max-900px {
+  max-width: 900px !important;
+}
+
+.max-1000px {
+  max-width: 1000px !important;
+}
+
+.max-1200px {
+  max-width: 1200px !important;
+}
+
+main {
+  margin-top: 60px;
+}
